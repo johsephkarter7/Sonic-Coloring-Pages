@@ -1,231 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sonic Coloring Pages – Free Printable Fun for All Ages</title>
-  <meta name="description" content="Dive into the world of Sonic Coloring Pages. Download free printable Sonic sheets, enjoy creative fun, and bring your favorite Sonic characters to life.">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    /* --- Reset & Base Styles --- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.8;
-    }
-    a {
-      color: #0077ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sonic Coloring Pages – Free Printable Fun for All Ages</title>
+<meta name="description" content="Dive into the colorful world of Sonic Coloring Pages with free PDF printables. Fun for kids and adults who love Sonic the Hedgehog.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* --- Reset & Base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0e1117;
+  color: #d1d5db;
+  line-height: 1.8;
+}
+a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-    /* --- Layout --- */
-    header {
-      background: linear-gradient(135deg, #0b84ff, #1fc8ff);
-      color: #fff;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
+/* --- Layout --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
 
-    main {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      background: #fff;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-    }
-    section h2 {
-      font-size: 2rem;
-      color: #0b84ff;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
-    }
-    section h3 {
-      font-size: 1.4rem;
-      color: #333;
-      margin: 1rem 0 0.5rem;
-    }
-    p {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-    }
+/* --- Cards --- */
+.card {
+  background: #1f2937;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  margin-bottom: 2rem;
+}
+.card h2 {
+  font-size: 1.8rem;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+}
+.card h3 {
+  font-size: 1.2rem;
+  color: #f9fafb;
+  margin: 1rem 0 .5rem;
+}
+.card p {
+  margin-bottom: 1rem;
+  color: #d1d5db;
+}
+ul {
+  list-style: disc;
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+ul li {
+  margin-bottom: .5rem;
+}
 
-    ul {
-      margin: 1rem 0 1.5rem 1.5rem;
-      list-style-type: disc;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
+/* --- Sidebar --- */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.widget {
+  background: #1f2937;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+.widget h3 {
+  color: #3b82f6;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.widget ul {
+  list-style: none;
+  padding-left: 0;
+}
+.widget ul li {
+  margin-bottom: .8rem;
+}
+.widget a {
+  color: #d1d5db;
+  font-weight: 500;
+}
+.widget a:hover {
+  color: #3b82f6;
+}
+.button {
+  display: inline-block;
+  background: #3b82f6;
+  color: #fff;
+  padding: .6rem 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.button:hover {
+  background: #2563eb;
+}
 
-    /* --- Footer --- */
-    footer {
-      background: #0b84ff;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.95rem;
-      margin-top: 3rem;
-    }
+/* --- Footer --- */
+footer {
+  background: #111827;
+  text-align: center;
+  color: #9ca3af;
+  padding: 1.2rem;
+  font-size: .9rem;
+  margin-top: 3rem;
+}
 
-    /* --- Responsive --- */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      section h2 {
-        font-size: 1.6rem;
-      }
-      section h3 {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Sonic Coloring Pages – Free Printable Fun for All Ages</h1>
-    <p>Bring your favorite Sonic characters to life with creativity and colors.</p>
-  </header>
+<!-- Header -->
+<header>
+  <h1>Sonic Coloring Pages – Free Printable Fun for All Ages</h1>
+  <p>Explore, print, and color your favorite Sonic characters anytime.</p>
+</header>
+
+<!-- Content -->
+<div class="container">
 
   <!-- Main Content -->
   <main>
-
-    <section>
+    <div class="card">
       <p>
         Are you ready to dive into the colorful and action-packed world of Sonic the Hedgehog? 
         If you’re a fan of this iconic blue speedster, you’ll love exploring the wide variety of 
         <a href="https://soniccoloringpages.net/" target="_blank">Sonic Coloring Pages</a> available online. 
         These free printable coloring sheets are perfect for kids, adults, and anyone who wants to relax, get creative, 
-        and bring their favorite Sonic characters to life. Whether you’re just starting out with coloring or you’ve been 
-        a long-time fan of the Sonic franchise, these pages offer a fun, engaging way to connect with the beloved character.
+        and bring their favorite Sonic characters to life.
       </p>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>The Charm of Sonic Coloring Pages</h2>
-      <p>
-        Sonic the Hedgehog has been a household name since his debut in 1991. Known for his lightning speed, signature blue spikes, 
-        and courageous personality, Sonic has captured the hearts of fans worldwide. Coloring pages featuring Sonic and his friends 
-        give fans a chance to interact with their favorite characters in a creative, hands-on way.
-      </p>
-      <p>
-        What makes Sonic coloring pages so appealing is their versatility. They’re not just for children—many adults also enjoy them 
-        as a calming hobby. With printable pages available in PDF format, you can easily download and start coloring right from the 
-        comfort of your home.
-      </p>
-    </section>
+      <p>Sonic the Hedgehog has been a household name since his debut in 1991. Known for his lightning speed, blue spikes, and courageous personality, Sonic has captured the hearts of fans worldwide.</p>
+      <p>Coloring pages featuring Sonic and his friends give fans a chance to interact with their favorite characters in a creative, hands-on way. With printable pages available in PDF format, you can easily download and start coloring right from home.</p>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Why Choose Printable Sonic Coloring Pages?</h2>
-      <p>Free printable Sonic coloring sheets are a fantastic resource for fans and parents alike. Here are some reasons why printable pages are so popular:</p>
-
       <h3>1. Convenience and Accessibility</h3>
-      <p>With just a few clicks, you can find and print hundreds of Sonic designs. There’s no need to buy expensive coloring books when you have instant access to high-quality PDFs online.</p>
-
+      <p>Print hundreds of Sonic designs at home—no need for expensive coloring books.</p>
       <h3>2. Variety of Designs</h3>
-      <p>Printable Sonic coloring pages come in all sorts of styles, from simple outlines for young children to detailed, intricate patterns for older kids and adults.</p>
-
+      <p>From simple outlines for young kids to intricate patterns for older fans, there’s something for everyone.</p>
       <h3>3. Cost-Effective Fun</h3>
-      <p>Printable coloring pages are free or low-cost, making them an excellent choice for creative play without breaking the bank.</p>
-
+      <p>Most Sonic coloring pages are free or very affordable, making them great for families.</p>
       <h3>4. Creative and Educational Benefits</h3>
-      <p>Coloring helps improve fine motor skills, boosts focus, and enhances color recognition. For adults, it’s a stress-relieving activity that fosters mindfulness.</p>
-    </section>
+      <p>Coloring enhances focus, boosts motor skills, and sparks imagination—great for kids and stress-relieving for adults.</p>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Popular Characters in Sonic Coloring Pages</h2>
       <ul>
-        <li><strong>Sonic the Hedgehog</strong> – The star of the show with spiky blue hair and red sneakers.</li>
+        <li><strong>Sonic the Hedgehog</strong> – The speedy hero with blue spikes and red shoes.</li>
         <li><strong>Miles “Tails” Prower</strong> – Sonic’s inventive two-tailed fox companion.</li>
         <li><strong>Knuckles the Echidna</strong> – The strong guardian of the Master Emerald.</li>
-        <li><strong>Amy Rose</strong> – A cheerful hedgehog with a big heart.</li>
-        <li><strong>Shadow the Hedgehog</strong> – The mysterious rival with a darker edge.</li>
-        <li><strong>Dr. Eggman (Robotnik)</strong> – The infamous villain always plotting against Sonic.</li>
+        <li><strong>Amy Rose</strong> – A cheerful, determined hedgehog.</li>
+        <li><strong>Shadow the Hedgehog</strong> – A darker rival to Sonic.</li>
+        <li><strong>Dr. Eggman</strong> – The iconic villain with endless schemes.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Sonic Coloring Pages for Kids</h2>
-      <p>
-        Printable Sonic coloring sheets for kids often feature simple outlines, fun poses, and playful scenes. 
-        These are great for keeping children engaged during playdates, road trips, or quiet afternoons at home.
-      </p>
-    </section>
+      <p>These feature simpler outlines, fun poses, and playful scenes—perfect for keeping children entertained and creative.</p>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Sonic Coloring Pages for Adults</h2>
-      <p>
-        Adult-friendly Sonic coloring pages include more intricate designs, detailed backgrounds, and high-quality illustrations 
-        that allow for advanced coloring techniques such as shading and blending.
-      </p>
-    </section>
+      <p>Detailed designs, backgrounds, and advanced illustrations give older fans a relaxing, nostalgic coloring experience.</p>
+    </div>
 
-    <section>
-      <h2>Tips for Coloring Sonic Pages</h2>
+    <div class="card">
+      <h2>Tips for Best Results</h2>
       <ul>
-        <li>Use crayons or colored pencils for younger kids and markers or gel pens for adults.</li>
-        <li>Print on thicker paper to prevent colors from bleeding through.</li>
-        <li>Experiment with both traditional and digital coloring methods.</li>
-        <li>Turn coloring into a group activity for added fun.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Educational Benefits</h2>
-      <p>
-        Coloring helps kids develop hand-eye coordination, creativity, focus, and patience while learning about color combinations. 
-        Teachers can also use these pages as a fun and educational classroom activity.
-      </p>
-    </section>
-
-    <section>
-      <h2>Final Thoughts</h2>
-      <p>
-        Sonic coloring pages offer the perfect mix of nostalgia, creativity, and entertainment for kids and adults alike. 
-        With countless free printable pages available, you can easily bring Sonic and his friends to life and relive the adventures 
-        of this beloved blue hero.
-      </p>
-      <p>
-        So, grab your coloring tools and start your journey into the vibrant and thrilling world of Sonic today!
-      </p>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 SonicColoringPages.net | Designed with ❤️ for Sonic fans
-  </footer>
-
-</body>
-</html>
+        <li>Use crayons or colored pencils for kids; markers or gel pens for adults.</li>
+        <li>Print on heavier paper to avoid color bleed-through.
